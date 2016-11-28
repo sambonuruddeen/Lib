@@ -31,33 +31,31 @@ class Admin extends CI_Controller {
     }
     
      else {
-     //$data['insert'] = $this->admin_model->upload_book();
+     
      
                 $config['upload_path']          = 'public/uploads/';
                 $config['allowed_types']        = 'pdf';
                 $config['max_size']             = 0;
                 $config['max_width']            = 0;
                 $config['max_height']           = 0;
-                $config['filename']             = 'lop.pdf';
+                $config['file_name']             = 'lop.pdf';
                 
                 
         $this->load->library('upload', $config);
         if ( ! $this->upload->do_upload('book'))
                 {
-                $data = array('upload_data' => $this->upload->data());
-        print_r($data);         
-                echo "invalid";
+                       
+                $this->session->set_flashdata('uploadError', 'Invalid file/Upload Failure');
                 }
                 else
                 {
-          //         $data = array('upload_data' => $this->upload->data());
-        //print_r($data);  
+                    $data['insert'] = $this->admin_model->upload_book();
                     $this->session->set_flashdata('uploadSuccess', 'File Upload Successful');
                 }
        
-        /*$this->load->view('inc/header_view');
+        $this->load->view('inc/header_view');
         $this->load->view('admin/dashboard');
-        $this->load->view('inc/footer_view');*/
+        $this->load->view('inc/footer_view');
     }
     }
 }

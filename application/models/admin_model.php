@@ -10,6 +10,7 @@ class Admin_model extends CI_Model {
     public function upload_book() {
         
         $data = array(
+           'faculty' => $this->input->post('faculty'), 
            'category_id' => $this->input->post('category'), 
            'title' => $this->input->post('title'), 
            'author' => $this->input->post('author'), 
@@ -26,7 +27,7 @@ class Admin_model extends CI_Model {
        }
  else { $this->session->set_flashdata('uploadError', 'Upload Failure');   }
         //Return the ID of the upload
-        return $new_id;  
+        //return $new_id;  
        
     }
     

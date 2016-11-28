@@ -14,7 +14,7 @@
      }
      
      public function login() {
-         
+        /* IMPORTANT - validate LOGIN  */
          $this->load->model('login_model');
          
          $this->load->library('form_validation');

@@ -44,22 +44,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 	<!-- header-top -->
-	<!--<div class="header-top">
+	<div class="header-top">
 		<div class="container">
 			<div class="w3layouts-address">
 				<ul>
-					<li><i class="fa fa-mobile" aria-hidden="true"></i> +11 222 333 4444</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com"> mail@example.com</a></li>
+				<li><i class="fa fa-globe" aria-hidden="true"></i> <a href="http://www.atbu.edu.ng">University Website</a></li>
+					<li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="mailto:info@example.com">Ask a Librarian</a></li>
+					<li><i class="fa fa-info-circle" aria-hidden="true"></i> <a href="#">FAQs </a></li>
 				</ul>
 			</div>
-			<div class="agileinfo-social-grids">
-				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-rss"></i></a></li>
-					<li><a href="#"><i class="fa fa-vk"></i></a></li>
-				</ul>
-			</div>-->
+			<form class="form-inline pull-right" style="margin-top: -4px;"role="form">
+<div class="form-group">
+
+				<input type="search" name="topsearch" class="form-control" placeholder="Quick Search" />
+
+</div>
+			</form>
 			<div class="clearfix"> </div>
 		</div>
 	</div>

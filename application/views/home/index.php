@@ -8,7 +8,7 @@
 							<img src="<?=base_url()?>public/images/3a.jpg" alt="Slider 1" />
 						</div>
 						<div class="col-md-6 content">
-							<h3>Hosting <span>City</span></h3>
+							<h3>Yelwa campus  <span>Library</span></h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur velit ac fringilla fermentum. Nulla sodales, magna eget pharetra feugiat, tellus metus lacinia nunc, nec vulputate purus nisl nec tortor. Mauris sem diam, interdum a euismod vitae, viverra non sapien. </p>
 						</div>
 						<div class="clearfix"> </div>
@@ -18,7 +18,7 @@
 							<img src="<?=base_url()?>public/images/1a.jpg" alt="Slider 1" />
 						</div>
 						<div class="col-md-6 content">
-							<h3>Personal <span>Hosting</span></h3>
+							<h3>Gubi Campus <span>Library</span></h3>
 							<p>Donec sagittis, dui sed lobortis convallis, ante eros auctor leo, vel commodo lacus nisl vitae velit. Nulla facilisi. Integer vehicula porta urna, id lacinia nisl semper vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
 						</div>
 						<div class="clearfix"> </div>
@@ -28,7 +28,7 @@
 							<img src="<?=base_url()?>public/images/2a.jpg" alt="Slider 1" />
 						</div>
 						<div class="col-md-6 content">
-							<h3>Shared <span>Hosting</span></h3>
+							<h3>Students using <span>E-library</span></h3>
 							<p>Aliquam at efficitur odio, et commodo odio. Nulla est lectus, tristique sit amet lorem at, porttitor dapibus nisi. Quisque bibendum sem ut ex pharetra sagittis. Vestibulum eu sapien non purus interdum tempus. Aenean varius elit sit amet lorem ultrices, at iaculis velit sodales. </p>
 						</div>
 						<div class="clearfix"> </div>
@@ -61,10 +61,11 @@
 				<div class="one-fifth column">
 					<span class="selection-box">
 						<select class="domains valid" name="domains">
+							<option selected="selected" value="all">All Collections</option>
 							<option>Keyword</option>
 							<option>Title</option>
 							<option>Author</option>
-							<option>Subject</option>
+							<option>Department</option>
 							<option>ISBN</option>
 						</select>
 					</span>
@@ -80,18 +81,18 @@
 	<div class="banner-bottom">
 		<div class="container">
 			<div class="w3-banner-bottom-heading">
-				<h3>Our <span>Catalog</span></h3>
+				<h3>Our <span>Resources</span></h3>
 			</div>
 			<div class="agileits-banner-bottom">
 				<div class="col-md-3 agileits-banner-bottom-grid">
 					<div class="services-grid1">
 						<div class="services-grid-right agile-services-grid-right">
 							<div class="services-grid-right-grid hvr-radial-out green-grid">
-								<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
 							</div>
 						</div>
 						<div class="services-grid-left agile-services-grid-left">
-							<h4>FACULTY OF AGRIC</h4>
+							<h4>Online Public Access Catalog</h4>
 							<p>Itaque earum rerum hic tenetur a sapiente 
 							delectus, ut aut reiciendis voluptatibus maiores alias</p>
 						</div>
@@ -101,13 +102,12 @@
 					<div class="services-grid1">
 						<div class="services-grid-right agile-services-grid-right">
 							<div class="services-grid-right-grid hvr-radial-out orange-grid">
-								<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 							</div>
 						</div>
 						<div class="services-grid-left agile-services-grid-left">
-							<h4>FACULTY OF ENGINEERING</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
+							<h4>Online Reference Resources</h4>
+							<p>Encyclopedia Britanica, Encyclopedia of Life, etc</p>
 						</div>
 					</div>
 				</div>
@@ -115,11 +115,11 @@
 					<div class="services-grid1">
 						<div class="services-grid-right agile-services-grid-right">
 							<div class="services-grid-right-grid hvr-radial-out green-grid">
-								<span class="glyphicon glyphicon-magnet" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
 							</div>
 						</div>
 						<div class="services-grid-left agile-services-grid-left">
-							<h4>FACULTY OF EDUCATION</h4>
+							<h4>E-library</h4>
 							<p>Itaque earum rerum hic tenetur a sapiente 
 							delectus, ut aut reiciendis voluptatibus maiores alias</p>
 						</div>
@@ -129,11 +129,11 @@
 					<div class="services-grid1">
 						<div class="services-grid-right agile-services-grid-right">
 							<div class="services-grid-right-grid hvr-radial-out red-grid">
-								<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-hdd" aria-hidden="true"></span>
 							</div>
 						</div>
 						<div class="services-grid-left agile-services-grid-left">
-							<h4>FACULTY OF SCIENCE</h4>
+							<h4>Catalog (Koha)</h4>
 							<p>Itaque earum rerum hic tenetur a sapiente 
 							delectus, ut aut reiciendis voluptatibus maiores alias</p>
 						</div>
