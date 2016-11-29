@@ -26,9 +26,9 @@ class Admin_model extends CI_Model {
            $this->session->set_flashdata('uploadSuccees', 'Upload Successful');        
        }
  else { $this->session->set_flashdata('uploadError', 'Upload Failure');   }
-        //Return the ID of the upload
-        //return $new_id;  
-       
+        
+       //Return the ID of the upload
+        return $new_id;  
     }
     
     

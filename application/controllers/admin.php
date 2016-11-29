@@ -32,13 +32,14 @@ class Admin extends CI_Controller {
     
      else {
      
-     
+                $data['insert'] = $this->admin_model->upload_book();
+                $newName = $data['insert'];
                 $config['upload_path']          = 'public/uploads/';
                 $config['allowed_types']        = 'pdf';
                 $config['max_size']             = 0;
                 $config['max_width']            = 0;
                 $config['max_height']           = 0;
-                $config['file_name']             = 'lop.pdf';
+                $config['file_name']             = $newName.'.pdf';
                 
                 
         $this->load->library('upload', $config);
@@ -49,7 +50,7 @@ class Admin extends CI_Controller {
                 }
                 else
                 {
-                    $data['insert'] = $this->admin_model->upload_book();
+                    
                     $this->session->set_flashdata('uploadSuccess', 'File Upload Successful');
                 }
        

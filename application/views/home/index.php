@@ -93,8 +93,7 @@
 						</div>
 						<div class="services-grid-left agile-services-grid-left">
 							<h4>Online Public Access Catalog</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
+							<p>Online Catolgs (books, journals, databases) are accessible at the library</p>
 						</div>
 					</div>
 				</div>
@@ -120,8 +119,7 @@
 						</div>
 						<div class="services-grid-left agile-services-grid-left">
 							<h4>E-library</h4>
-							<p>Itaque earum rerum hic tenetur a sapiente 
-							delectus, ut aut reiciendis voluptatibus maiores alias</p>
+							<p>The library currently has a collection of over 10,000 digital books and audio-visual materials.</p>
 						</div>
 					</div>
 				</div>
@@ -163,7 +161,7 @@
 								<div class="pricing-bottom-top">
 									<p>Animal Production</p>
 									<p>Crop Production</p>
-									<p>Agric Econs & Ext</p>
+									<p>Agric Econs &amp; Ext</p>
 								</div>
 								<div class="pricing-bottom-bottom">
 									<p><span>6500 </span> Articles</p>
@@ -172,7 +170,7 @@
 									<p class="text"><span>247</span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="plans.html">Explore More</a>
+									<a href="<?=site_url('collections')?>">Explore More</a>
 								</div>
 							</div>
 						</div>
