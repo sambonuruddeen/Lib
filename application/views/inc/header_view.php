@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hosting City a Hosting Category Flat Bootstrap responsive Website Template | Home :: w3layouts</title>
+<title>ATBU Library</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Hosting City Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -49,15 +49,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3layouts-address">
 				<ul>
 				<li><i class="fa fa-globe" aria-hidden="true"></i> <a href="http://www.atbu.edu.ng">University Website</a></li>
-					<li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="mailto:info@example.com">Ask a Librarian</a></li>
+					<li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="#">Ask a Librarian</a></li>
 					<li><i class="fa fa-info-circle" aria-hidden="true"></i> <a href="#">FAQs </a></li>
 				</ul>
 			</div>
-			<form class="form-inline pull-right" style="margin-top: -4px;"role="form">
+			<form class="form-inline pull-right" style="margin-top: -4px;"role="form" action="<?=site_url('collections/quick_search')?>" name="q_search" method="post">
 <div class="form-group">
-
 				<input type="search" name="topsearch" class="form-control" placeholder="Quick Search" />
-
+			
 </div>
 			</form>
 			<div class="clearfix"> </div>

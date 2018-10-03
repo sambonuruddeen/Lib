@@ -1,3 +1,15 @@
+<script type="text/javascript">
+    $(function(){
+        $("#faculty").change(function(){
+          $.get("<?=  site_url('admin/dept')?>", {faculty_id:$("#faculty").val()}, function(data){
+                                            
+            $("#department").html(data);
+          });
+          return false;
+        
+        });
+      });
+</script>
 <!-- about-heading -->
 	<div class="about-heading">
 		<h2>Upload Section</h2>
@@ -22,19 +34,24 @@
 				<div class="login-form">
                                     <form action="<?=  site_url('admin/dashboard')?>" method="post" enctype="multipart/form-data">
                                           
-                                                <label>Choose Faculty: </label>
-                                            <select name="faculty">
-                                                <option value="1">Agriculture</option>
-                                                <option value="2">Education</option>
-                                                <option value="3">Environmental</option>
-                                                <option value="4">Science</option>
+                                                <label> Faculty: </label>
+                                            <select name="faculty" id="faculty">
+                                                 <option>Select Faculty</option>
+                                         <?php  foreach ($faculties as $faculty) { ?>
+                                        <option value="<?php echo $faculty['faculty_id']; ?>"><?php echo $faculty['faculty']; ?></option>
+                                                    <?php } ?>
+                                            </select>
+                                            <label> Department: </label>
+                                            <select name="department" id="department">
+                                                <option value="">Choose Department</option>
+                                                
                                             </select>
                                                 <label>Select Upload Category:</label>
                                             <select name="category">
-                                                <option value="1">Book</option>
-                                                <option value="2">Journal</option>
-                                                <option value="3">Thesis</option>
-                                                <option value="4">Report</option>
+                                                <option value="">Choose Category</option>
+                                                <?php  foreach ($category as $cat) { ?>
+                                        <option value="<?php echo $cat['category_id']; ?>"><?php echo $cat['category']; ?></option>
+                                                    <?php } ?>
                                             </select>
                                           
 						<input type="text" name="title" placeholder="Book Title" required="">

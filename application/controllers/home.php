@@ -4,12 +4,16 @@
      public function __construct() {
          parent::__construct();
          
-         
+         $this->load->model('home_model');
      }
      
      public function index() {
+
+            $data['faculties'] = $this->home_model->get_faculties();
+            //$data['depts'] = $this->home_model->get_depts();
+
          $this->load->view('inc/header_view');
-         $this->load->view('home/index');
+         $this->load->view('home/index', $data);
          $this->load->view('inc/footer_view');
      }
      

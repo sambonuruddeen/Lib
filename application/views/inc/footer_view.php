@@ -133,7 +133,7 @@
 	<script>
 	<!--
 		
-		$(function(){ $(".flipster").flipster({ style: 'coverflow', start: 'center' }); });
+		$(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 }); });
 
 	-->
 	</script>

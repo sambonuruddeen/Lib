@@ -151,31 +151,35 @@
 			<div class="wthree-special-grid">
 				<div class="flipster">
 				  <ul>
+				  <?php foreach ($faculties as $faculty) {	?>
 					<li>
 						<div class="pricing">
 							<div class="pricing-top green-top">
-								<h3>Agriculture</h3>
-								<p>Over 1000 Books</p>
+								<h3><?php echo $faculty['faculty'];?></h3>
+								<p>Over <?php echo $this->home_model->colletion_count($faculty['faculty_id'], 1); ?> Books</p>
 							</div>
 							<div class="pricing-bottom">
 								<div class="pricing-bottom-top">
-									<p>Animal Production</p>
-									<p>Crop Production</p>
-									<p>Agric Econs &amp; Ext</p>
+								<?php foreach($this->home_model->get_depts($faculty['faculty_id']) as $single) { ?>
+									<p><?php echo $single['department'];?></p>
+								<?php } ?>
 								</div>
 								<div class="pricing-bottom-bottom">
-									<p><span>6500 </span> Articles</p>
-									<p><span>75</span> Research Papers</p>  
-									<p><span>25</span> Theses</p>
-									<p class="text"><span>247</span> Journals</p>
+									<p><span><?php echo $this->home_model->colletion_count($faculty['faculty_id'], 5); ?> </span> Articles</p>
+									<p><span><?php echo $this->home_model->colletion_count($faculty['faculty_id'], 0); ?></span> Research Papers</p>  
+									<p><span><?php echo $this->home_model->colletion_count($faculty['faculty_id'], 3); ?></span> Theses</p>
+									<p class="text"><span><?php echo $this->home_model->colletion_count($faculty['faculty_id'], 2); ?></span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="<?=site_url('collections')?>">Explore More</a>
+									<?php echo anchor('collections/index/'.$faculty['faculty_id'], 'Explore More'); ?>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li>
+					<?php } {
+						# code...
+					} ?>
+					<!--<li>
 						<div class="pricing">
 							<div class="pricing-top blue-top">
 								<h3>Education</h3>
@@ -194,7 +198,7 @@
 									<p class="text"><span>247</span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="plans.html">Explore More</a>
+									<a href="#">Explore More</a>
 								</div>
 							</div>
 						</div>
@@ -203,13 +207,13 @@
 						<div class="pricing">
 							<div class="pricing-top">
 								<h3>Engineering</h3>
-								<p>$35/month</p>
+								<p>Over 200 Books</p>
 							</div>
 							<div class="pricing-bottom">
 								<div class="pricing-bottom-top">
-									<p>1 Website</p>
-									<p>1 Year Updates</p>
-									<p>1 Year Email Support</p>
+									<p>Civil Engineering</p>
+									<p>Electical Enginnering</p>
+									<p>Mechanical Engineering</p>
 								</div>
 								<div class="pricing-bottom-bottom">
 									<p><span>6500 </span> Articles</p>
@@ -218,7 +222,7 @@
 									<p class="text"><span>247</span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="plans.html">Explore More</a>
+									<a href="#">Explore More</a>
 								</div>
 							</div>
 						</div>
@@ -244,7 +248,7 @@
 									<p class="text"><span>247</span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="plans.html">Explore More</a>
+									<a href="#">Explore More</a>
 								</div>
 							</div>
 						</div>
@@ -268,7 +272,7 @@
 									<p class="text"><span>247</span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="plans.html">Explore More</a>
+									<a href="#">Explore More</a>
 								</div>
 							</div>
 						</div>
@@ -292,11 +296,11 @@
 									<p class="text"><span>247</span> Journals</p>
 								</div>
 								<div class="buy-button">
-									<a href="plans.html">Explore More</a>
+									<a href="#">Explore More</a>
 								</div>
 							</div>
 						</div>
-					</li>
+					</li>-->
 				  </ul>
 				</div>
 			</div>

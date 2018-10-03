@@ -1621,8 +1621,9 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter{
 }
 .agileinfo-price{
     background: #67d6ff;
-    padding: 2em 0;
+    padding: .8em 0;
     text-align: center;
+    margin-top: 1em;
 }
 .yellow-agileinfo-price{
     background: #eea303 !important;	
@@ -1648,6 +1649,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter{
 .price-bg {
     background: #fff; 
     padding: 1.5em;
+    margin: 1em 0;
 }
 .price-bg p.price-label-1 {
 	color: #67d6ff;
@@ -1967,6 +1969,23 @@ a.pa_italic:focus {
      background: none;
     display: block;
 }
+.signin-form select {
+    border: none; 
+    border-bottom: 2px solid #212121;
+     width: 100%;
+    background: none;
+    display: block;  
+   }
+.signin-form label   {
+   
+    font-size: 0.8em;
+    margin: 1em 0;
+ 
+    color: #212121;
+   
+    letter-spacing: 1px;
+    text-align: center;
+   }
 ::-webkit-input-placeholder{
 	color:#212121 !important;
 }
@@ -2870,9 +2889,12 @@ i.fa.fa-pencil{
 	.price-grid,.agileits-pricing,.vpn-pricing-grid{
 		float:left;
 		width:50%;
+
 	}
 	.price-grid:nth-child(3),.price-grid:nth-child(4),.agileits-pricing:nth-child(3),.agileits-pricing:nth-child(4),.vpn-pricing-grid:nth-child(3),.vpn-pricing-grid:nth-child(4){
 		margin-top: 2em;
+    margin-bottom: 3em;
+    float: left;
 	}
 	.servc-grid:nth-child(2) {
 		margin: 4em 0 0 0;
@@ -3361,4 +3383,37 @@ i.fa.fa-pencil{
 		min-height: 250px;
 	}
 }
+
+.huge {
+    font-size: 40px;
+}
+.medium{
+    font-size: 30px;
+}
+.mid{
+    font-size: 19px;
+}
+
+.anima{
+  background: url('/atbulib/public/images/pdf_logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 1.2em;
+    }
+  div .anima .row {
+  
+  min-height: 6em;
+  background-color: #FFFFFF;
+  opacity:0.8;
+  filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.big {
+  font-size: 2em;
+  font-weight: bold;
+  }
+  .big span {
+    color: #67d6ff;
+  }
 /*-- //response --*/
